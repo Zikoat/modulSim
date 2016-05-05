@@ -22,3 +22,5 @@ public class Particle : MonoBehaviour {
 		if (charge < 0) gameObject.GetComponent<MeshRenderer>().material = negativeCharge;
 	}
 }
+
+// added a comment to test git
