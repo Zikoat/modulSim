@@ -1,0 +1,14 @@
+lerp(red,grey,charge)
+or
+lerp grey blue charge
+
+attraction's force = something/r
+repulsion = -something/r (different direction)
+
+applygravity should take gameobjects with rigidbodys
+have to getcomponent<rb> inside applygravity
+and getcomponent<rb> and getcomponent<Particle> in applymagnetism
+
+charge*charge
+	if plus, repel
+	if negative, attract
