@@ -20,7 +20,7 @@ public class spawnParticle : MonoBehaviour {
 			handler.particles.Add(spawnedObj);
 		}
 		Debug.Log (amount + " particles spawned");
-		// handler.UpdateParticlesArray ();
+		Debug.Log (handler.particles.Count + " particles in array");
 	}
 	
 	// Update is called once per frame
