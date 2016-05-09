@@ -1,0 +1,8 @@
+2 particles  interzct with each other, with the gravtiational force.  Spawn 2 of them, when they get in range of the gravitational force, they get put into their own simulation, and they randomly get put together, in many different ways, and the output of thiseffet gets saved. When they get attracted and start to orbvit, or touch, they will in the simulation 1 be put together as 1 particle. This is particle 2. If another particle 1 gets added to sim1, they will get into gravitational force with particle2, abd a simulation between 1 and 2 gets put into their own simulation. Particle 2 kknows it is compromised of 2 partiwcle 1, and know how to act with another particle 1.partixcel 1 and particle 2 enter simulation 3, where the 2 aåparticles stikcking together are put up against particle 1. 
+It can aesy get more complicated, and with more advanced results, if we put in different forces, magnetism, gravity, Weak stron force. Or manually descruibe interaction between 
+
+If 2 different forces act upon a particle, make new sim
+
+Easy model for nuclear physics: 
+Gravity pulls always, based on mass
+Magnetism pulls or repels based on charge.
