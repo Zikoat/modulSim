@@ -9,7 +9,7 @@ public class drawLines : MonoBehaviour {
 
 	void Start () {
 		LineRenderer lineRenderer = gameObject.AddComponent<LineRenderer>();
-		particles = gameObject.GetComponent<force>().particles;
+		particles = gameObject.GetComponent<particleHandler3D>().particles;
 		lineRenderer.material = new Material(Shader.Find("Particles/Additive"));
         lineRenderer.SetWidth(0.2F, 0.2F);
         lineRenderer.SetVertexCount(4);
@@ -17,7 +17,7 @@ public class drawLines : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		particles = gameObject.GetComponent<force>().particles;
+		particles = gameObject.GetComponent<particleHandler3D>().particles;
 		LineRenderer lineRenderer = gameObject.GetComponent<LineRenderer>();
 		Vector3[] points = new Vector3[particles.Count];
 		int i = 0;
