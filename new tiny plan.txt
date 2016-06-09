@@ -1,0 +1,4 @@
+less declining attraction
+more steep repulsion
+
+find "outer" which are not full, color them, make greater attraction over great distances against them
