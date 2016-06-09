@@ -17,6 +17,8 @@ public class Particle3D : MonoBehaviour {
 
 	public List<GameObject> bonds;
 
+	public List<LineRenderer> lines;
+
 
 	// Use this for initialization
 	void Start () {
@@ -48,11 +50,17 @@ public class Particle3D : MonoBehaviour {
 				Vector3 force = direction * (strength - strength2) * multiplier;
 
 				rigidBody.AddForce(force);
-				if (radius < 10 && !bonds.Contains(particles[i])) {
+
+				if (radius < 3 && !bonds.Contains(particles[i])) {
 					bonds.Add (particles [i]);
+					print ("+bond with " + bonds.Count);
 				}
-				if (radius < 3 && bonds.Contains(particles[i])) {
+				if (radius > 3 && bonds.Contains(particles[i])) {
 					bonds.Remove (particles[i]);
+					print ("-bond with " + bonds.Count);
+				}
+				foreach (GameObject bond in bonds) {
+					lines = new LineRenderer[bonds.Count];
 				}
 			}
 		}

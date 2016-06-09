@@ -11,10 +11,10 @@ GameObject:
   - 33: {fileID: 3311584}
   - 135: {fileID: 13537840}
   - 23: {fileID: 2373688}
-  - 114: {fileID: 11433120}
   - 54: {fileID: 5419260}
   - 96: {fileID: 9626026}
   - 114: {fileID: 11447588}
+  - 114: {fileID: 11443668}
   m_Layer: 0
   m_Name: 3DParticle
   m_TagString: particle
@@ -129,7 +129,7 @@ TrailRenderer:
       rgba: 16777215
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
---- !u!114 &11433120
+--- !u!114 &11443668
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -137,24 +137,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 141472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfdea504ae6a5fe408533143409dc3fe, type: 3}
+  m_Script: {fileID: 11500000, guid: cfe055952f9af2f42b35a2bc1f3ac5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particles: []
-  multiplier: 1
+  A: 5
+  B: 40
+  useMass: 0
+  M: 2
+  N: 5
+  multiplier: 7
+  bonds: []
 --- !u!114 &11447588
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 141472}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b26cbce43a5557f4ba07543385e2b9ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   onclick: 1
-  strength: 0
+  strength: 200
 --- !u!135 &13537840
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -212,7 +217,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: strength
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: useMass
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: A
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: B
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: N
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: multiplier
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
